@@ -1,0 +1,215 @@
+
+form{
+    display: inline-flex;
+
+}
+main {
+    font-family: poppins;
+}
+body{
+    background-color: hsl(0, 0%, 94%);
+    padding: 20px;
+    height: 100%;
+}
+.container-fluid{
+    background-color:hsl(0, 0%, 100%);
+    padding: 20px;
+    margin-top: 100px;
+    border-radius: 10px 10px 150px;
+    align-content: center;
+    position: relative;
+    height: 95%;
+    font-family: 'Poppins', sans-serif;
+    max-width: 900px;
+}
+label{
+    margin-bottom: 10px;
+}
+.row input {
+    border: 2px solid rgb(211, 206, 206);
+    border-radius: 5px;
+    height: 30px;
+    padding: 40px;
+}
+.input{
+    display: inline-flexbox;
+    flex: auto;
+}
+
+.error-label{
+    color: red;
+}
+.error-Active{
+    border: 2px solid red;
+    display: flex-inline;
+}
+#error_month{
+    display: block;
+    color: red;
+}
+#error_day{
+    color: red;
+    display: block;
+}
+#error_year{
+    display: block;
+    color: red;
+}
+
+.calculate-btn{
+  display: inline;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 55%;
+  padding: 10px;
+  float: right;
+  margin-top: -40px;
+  position: static;
+  animation-name: glow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.calculate{
+    height: 40px;
+    width: 40px;
+    position:relative;
+}
+hr{
+    margin-top: 50px;
+}
+@keyframes glow {
+    0% {padding: 10px;}
+    50% {padding: 13px;
+        box-shadow: inset 1px 1px  1px 3px  hsl(259, 81%, 60%) ;
+    }
+    70%{
+        box-shadow: inset 1px 1px  1px 3px  hsl(260, 58%, 86%);
+    }
+    100% {padding: 10px;
+        box-shadow:inset 1px 1px  1px 3px  hsl(259, 66%, 69%) ;
+    }
+}
+.calculate-btn img{
+    height: 20px;
+    width: 20px;
+    position:inherit;
+}
+.input_field{
+    display: inline-flexbox;
+    padding: 20px;
+}
+.day{
+    padding-top: 15px;
+    font-size: 12px;
+    font-weight:550;
+}
+.day input{
+    font-size: 20px;
+    padding: 2px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 2px solid rgb(218, 213, 213);
+}
+.month{
+    padding-top: 15px;
+    font-size: 12px;
+    font-weight:550 ;
+}
+.month input{
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 2px;
+    font-weight: 600;
+    text-align: center;
+    border: 2px solid rgb(218, 213, 213);
+}
+.year{
+    padding-top: 15px;
+    font-size: 12px;
+    font-weight:550 ;
+   /* width: 80px; */
+}
+.year input{
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-align: center;
+    padding: 2px;
+    border: 2px solid rgb(218, 213, 213);
+}
+.display_field {
+    margin-top: 50px;  
+}
+#output{
+    display: inline-flex;
+}
+.show_years, .show_months, .show_days{
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: -5px;
+    color: hsl(259, 100%, 65%);
+}
+.display_field h3{
+    color: black;
+    font-weight: 900;
+    font-size: 40px;
+    padding-left: 1px;
+}
+.output_months h3{
+    padding-left: 0px;
+}
+
+@media (max-width:414px ){
+    .container-fluid{
+        margin-top: 50px;
+        height: 100%;
+    }
+    body{
+        height: 100%;
+        position: relative;
+    }
+    .row input{
+        padding: 10px;
+        font-size: 10px;
+        text-align: center;
+    }
+   
+    .calculate-btn{
+        display: inline;
+        margin-top: -40px;
+        padding: 20px;
+        left: 45%;
+        position: absolute;
+        animation-name: glow;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    .calculate-btn img{
+        height: 20px;
+        width: 20px;
+        position:relative;
+    }
+    hr{
+        margin-top: 50px;
+    }
+    .show_years{
+        font-weight: 700;
+        font-size: 2rem;
+        margin-top: 5px;
+    }
+    .output_months h3{
+        position: relative;
+        left: -20px;
+    }
+    .show_months{
+        font-weight: 700;
+        font-size: 2rem;
+        margin-top: 5px;
+    }
+    .show_days{
+        font-weight: 700;
+        font-size: 2rem;
+        margin-top: 5px;
+    }
+
+}
